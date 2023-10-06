@@ -1,0 +1,22 @@
+<div class="container d-flex justify-content-center">
+    <div class="content-table">
+        <table class="table table-striped">
+            <thead class="text-center">
+                <tr>
+                    <th>
+                        User
+                    </th>
+                    <th>
+                        id
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let usuario of data" (click)="selectUsuario(usuario.login)">
+                    <td>{{ usuario.login }}</td>
+                    <td>{{ usuario.id }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

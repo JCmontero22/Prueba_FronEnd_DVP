@@ -1,0 +1,40 @@
+<div class="container content-principal">
+    <div class="card" *ngFor="let datos of data">
+        <div class="card-header">
+            <div class="content-titulo">
+              <h4 class="text-center">Usuario: {{ datos.login }}</h4>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="content-informacion">
+
+                <div class="content-avatar">
+                    <img src="{{ datos.avatar_url }}" alt="">
+                </div>
+                <div class="content-datos">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong style="margin-right: 10px;">Locacion: </strong> <span>{{ datos.location }}</span></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong style="margin-right: 10px;">Email:</strong> <span>{{ datos.email }}</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong style="margin-right: 10px;">Compañias:</strong> {{ datos.company }}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong style="margin-right: 10px;">Repositorios publicos:</strong> {{ datos.public_repos }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="d-flex justify-content-end">
+              <button type="button" class="btn btn-primary" (click)="cambiarVista()">Regresar</button>
+            </div>
+        </div>
+    </div>
+</div>

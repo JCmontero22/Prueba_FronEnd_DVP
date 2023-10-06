@@ -1,0 +1,7 @@
+.content-table{
+    width: 30%;
+}
+
+tr{
+    cursor: pointer;
+}

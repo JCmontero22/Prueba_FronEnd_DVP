@@ -1,0 +1,22 @@
+
+<div class="container content-principal">
+    <div class="card">
+        <div class="card-body">
+            <div class="content-titulo">
+              <h4>Buscar usuarios</h4>
+            </div>
+            <div class="content-form">
+                <form (ngSubmit)="buscarUsuario()">
+                    <div class="mb-3">
+                      <label for="user" class="form-label">Usuario</label>
+                      <input type="text" name="usuario" id="usuario" class="form-control" placeholder="..." [(ngModel)]="usuario">
+                    </div>
+                    <div class="content-btn d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">Buscar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

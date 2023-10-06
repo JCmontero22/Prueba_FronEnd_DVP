@@ -1,0 +1,7 @@
+<app-buscador-usuario *ngIf="vista == 1" (loginUsuario)="buscarUsuario($event)"></app-buscador-usuario>
+<div class="contentListaUsuarios" *ngIf="vista == 1">
+  <app-lista-usuarios (loginUsuario)="buscarUsuario($event)"></app-lista-usuarios>
+</div>
+<div *ngIf="vista == 2">
+  <app-datos-usuario (vistas)="cambiarVista($event)"></app-datos-usuario>
+</div>
